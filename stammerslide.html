@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/slide.css" rel="stylesheet" type="text/css">
+<!--<link href="home_1css.css" rel="stylesheet" type="text/css">
+--><link href="https://fonts.googleapis.com/css?family=Flavors&display=swap" rel="stylesheet">
+
+<style>
+
+  body
+  {
+  	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Topics/Stammering/bg1.jpg);
+  	height : 100vh;
+
+  	background-size: cover;
+  	background-position: center;
+
+  }
+</style>
+
+</head>
+
+<div class="row">
+	
+		<ul class="main-nav">		
+		<li class="active"><a href="index.html">HOME</a></li>	
+	 	<li><a href="">CONTACT</a></li>	
+	 	<br><br>
+	    </ul>
+	 </div>
+
+
+<body>
+<h1><center> HOW TO STOP STAMMERING </center></h1> 
+<br><br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/Topics/Stammering/1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Topics/Stammering/2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Topics/Stammering/3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+
+</div>
+<div>
+<br><br><br>
+<legend>
+<center>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/ygEbHDSoDh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</legend>
+<br><br><br><br>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

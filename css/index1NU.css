@@ -1,0 +1,57 @@
+	/* Add a black background color to the top navigation */
+.topnav {
+  /*background-color: #333;*/
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+  body
+{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/root/Desktop/hack/HOMEPAGEimages/home_back_1.jpg);
+  height : 100%;
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.link{
+    padding: 25px 15px;
+    /*display:inline-block;*/
+    text-decoration: none !important;
+    margin: auto;
+    height: 200px;
+    width: 700px;
+      display: grid;
+      text-align: center;
+    background-color: #4CAF50;
+
+
+   /* -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;*/
+}

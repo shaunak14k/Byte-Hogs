@@ -1,0 +1,98 @@
+*
+{
+	margin :0;
+	padding:0;
+}
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/root/Desktop/hack/images/homepage/b.jpg);
+	height : 100vh;
+
+	background-size: cover;
+	background-position: center;
+
+}
+.main-nav
+{
+	float :right;
+	list-style:none;
+	margin-top :30px;
+}
+.main-nav li
+{
+	display:inline-block;
+}
+.main-nav li a
+{
+	color:white;
+	text-decoration: none;
+	padding:5px 20px;
+	font-family:"Roboto",sans-serif;
+	font-size:15px;
+}
+.main-nav li.active a
+{
+	border:1px solid white;
+}
+.main-nav li a:hover
+{
+	border:1px solid white;
+}
+
+body
+{
+	font-family:monospace;
+}
+.row
+{
+	max-width:1200px;
+	margin:auto;
+}
+button 
+{
+  background-color: transparent;  	/* Green background F0935A */
+  border: 1px solid black; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 80%; /* Set a width if needed */
+  height:25%;*/
+  display: grid; /* Make the buttons appear below each other */
+  align-content: center;*/ 
+  margin:auto;
+  position: relative;
+  margin-top: 20px;
+  max-width: 1200px;
+font-family: 'Mystery Quest', cursive;
+  
+}
+
+.wrapper 
+{
+	text-align: center;
+
+}
+
+
+.btn-group button:not(:last-child) 
+{
+  border-bottom: none; /* Prevent double borders */
+  align-content: center;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover 
+{
+  background-color: #3e8e41;
+}
+
+/*.your-centered-div {
+    width: 560px; /* you have to have a size or this method doesn't work */
+ /*   height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+   /* position: absolute; /* positions out of the flow, but according to the nearest parent */
+    /*top: 0; right: 0; /* confuse it i guess */
+    /*bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+/*}
